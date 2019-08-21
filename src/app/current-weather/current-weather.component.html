@@ -1,3 +1,13 @@
-<p>
-  current-weather works!
-</p>
+<div>
+  <div>
+    <span>{{current.City}}, {{current.Country}} </span>
+    <span>{{current.Date | date:'fullDate'}}</span>
+  </div>
+  <div>
+    <img [src]="current.Image" alt="weather image" width='30' height='30'>
+    <span>{{current.Temperature | number:'1.0-0'}} &#8457;</span>
+  </div>
+  <div>
+    {{current.Description}}
+  </div>
+</div>
